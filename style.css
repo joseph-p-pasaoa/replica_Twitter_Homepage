@@ -174,9 +174,6 @@ input[type="submit"] {
 
   align-items: flex-start;
   display: inline-block;
-  border-radius: 100px;
-  /* border: 1px solid #1da1f2;
-  background-color: #fff; */
   
   height: 100%;
   padding: 12px;
@@ -196,11 +193,10 @@ input[type="submit"] {
   text-transform: none;
   text-indent: 0px;
   text-shadow: none;
-  /* color: #1da1f2; */
 }
 
-form#login > a {
-  height: fit-content;
+a#log-in-fakejs {
+  height: max-content;
 }
 
 a:link input[type="submit"], a:visited input[type="submit"] {
@@ -232,10 +228,23 @@ div#white-copycontainer {
   background-color: transparent;
 }
 
-div#white-header-img {
+div#white-header {
   margin: 16px auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+div#white-header > a#log-in-fakejs {
+  display: none;
+  justify-self: end;
+  margin-top: 0;
+}
+
+div#white-header > a input {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 0;
 }
 
 .Icon {
@@ -452,4 +461,50 @@ li.foot-item a:active {
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx)
 body {
     -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  /* ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px  */
+
+  div#logincontainer {
+    display:none;
+  }
+
+  div#white-header > a#log-in-fakejs {
+    display: block;
+  }
+}
+
+@media (max-width: 799px) {
+  div#base-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 326px min-content min-content;
+  }
+  
+  div#white-half, div#blue-half {
+    padding: 0 16px;
+  }
+
+  div#white-half {
+    grid-column: 1;
+    order: -1;
+  }
+
+  div#blue-half {
+    grid-column: 1;
+    align-items: flex-start;
+  }
+
+  div#footer {
+    grid-column: 1 / span 1;
+  }
+
+  div#logincontainer {
+    display:none;
+  }
+
+  div#white-header > a#log-in-fakejs {
+    display: block;
+  }
 }
