@@ -176,8 +176,8 @@ input[type="submit"] {
   margin-top: 12px;
 
   font-size: 14px;
-  font-weight: bold;
   line-height: 20px;
+  font-weight: bold;
   user-select: none;
   text-rendering: auto;
   letter-spacing: normal;
