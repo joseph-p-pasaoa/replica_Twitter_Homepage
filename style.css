@@ -124,6 +124,12 @@ form#login {
   max-width: 600px;
   padding-left: 20px;
   padding-right: 20px;
+  color :rgb(20, 23, 26);
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+::placeholder {
+  font-size: 14px;
 }
 
 div.login-texts {
