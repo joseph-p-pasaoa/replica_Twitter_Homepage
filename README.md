@@ -1,6 +1,6 @@
 # Replicating Twitter's Homepage
 
-_Assignment to code a visual and peripherally-interactive replica of Twitter's homepage in HTML and CSS._
+_Assignment to code a visual and peripherally-interactive replica of Twitter's homepage in only HTML and CSS._
 
 
 ## Full-sized screen
